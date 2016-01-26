@@ -1,0 +1,6 @@
+cd - change directory
+ls - view context in file
+gedit  (filename) - create file
+git add - Add file to repository
+git commit -m "Description" - Add description of the file
+git push - push the file
