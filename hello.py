@@ -26,3 +26,19 @@ print ("Punch", "Nickname:Sadness", "14")
 print ("Biology", "Forensic Science", "Chemistry")
 print ("Algebra 1", "Algebra 2", "precalculous", "AP Calculous")
 print "tired"
+Assignments = ("Geometry", "test on Friday", "Physical Science", "test on Monday")
+print Assignments
+Teststmr = ("Geometry", "first period", "Biology", "fourth period")
+print Teststmr
+mybuddy = ("Sadness")
+print mybuddy
+y=3*5
+print y
+x=4 % 7
+print x
+t=7 % 8
+print t
+r=6 // 12
+print r
+v=9 // 2
+print v
