@@ -17,11 +17,11 @@ VolumeofSquare = lofsquare**3 #Define VolumeofSquare variable by cubing the valu
 HalfofVolume = VolumeofSquare / 2 #Define the HalfofVolume variable by dividing the VolumeofSquare variable by 2
 AreaofRectangle = lofrectangle * hofrectangle #Define AreaofRectangle by multiplying the lofrectangle variable with the hofrectangle variable
 ninthrectangle = AreaofRectangle * 1.0 #Define ninthrectangle variable by multiplying the AreaofRectangle variable with 1.0
-print "Hello!" + "My" "name" + "is"+ MyName #Print out the strings and the value in the variable MyName
-print "I" + "am" + str(MyAgeInYears)+ "years"+ "old" #Print out the strings and the value in the variable MyAgeInYears
-print "I" + "probably" + "have" + str(LeftToLive) + "years" + "left" + "to" +  "live" #Print out the strings and the value in the variable LeftToLive
-print "I"+ "am"+ str(MyHeightInM) + "cm" #Print out the strings and the value in the variable MyHeightInM
-print "The"+ "answer" + "to"+ "question"+ str(4) + "is"+ str(AreaofSquare) #Print out the strings and the value in the variable AreaofSquare
+print "Hello!" + "My " "name " + "is "+ MyName #Print out the strings and the value in the variable MyName
+print "I " + "am " + str(MyAgeInYears) + "years "+ "old " #Print out the strings and the value in the variable MyAgeInYears
+print "I " + "probably " + "have " + str(LeftToLive) + "years " + "left " + "to " +  "live " #Print out the strings and the value in the variable LeftToLive
+print "I "+ "am "+ str(MyHeightInM) + "cm "+ "tall" #Print out the strings and the value in the variable MyHeightInM
+print "The "+ "answer " + "to "+ "question "+ str(4) + "is "+ str(AreaofSquare) #Print out the strings and the value in the variable AreaofSquare
 print ("The","average", "height","for","girls", "my", "age", "in", "Korea", "is", str(AverageFemaleHeight)) #Print out the strings and the value in the variable AverageFemaleHeight
 print ("To", "change", "from", "meter", "to", "feet", ",", "multiply", str(MtoFT)) #Print out the strings and the value in the variable MtoFT
 print ("I", "am", str(AgeInMonths), "months","old") #Print out the strings and the value in the variable AgeInMonths

@@ -52,8 +52,17 @@ def area (a,b,c):
 
 print area (1,2,2.5)
 
-def right_align("word")
-    w=80-int(len(word)+2),"word"
-    
-def msg_box()
+def right_align(word):
+    return  str ((80-len(word))*" " + word)
 
+print right_align("Hello")
+    
+def center(term):
+    return str ((40-len(term))*" " + term)
+
+print center("Hello")
+
+def msg_box():
+    "+" + len(word)*" " + "+" + \n| + word + | + \n+ "+" + len(word)*" " + "+"
+
+print msg_box("Hello")
