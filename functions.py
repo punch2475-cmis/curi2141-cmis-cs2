@@ -1,57 +1,57 @@
-def Addition(x,y):
+def add(x,y):
     return x+y
 
-z= Addition(3,4)
+z= add(3,4)
 print z
 
-def Subtraction(a,b):
+def sub(a,b):
 	return a-b
 
-c=Subtraction(5,3)
+c=sub(5,3)
 print c
 
-def Multipication(d,e):
+def mul(d,e):
 	return d*e
 
-f=Multipication(4,4)
+f=mul(4,4)
 print f
 
-def Division(g,h):
+def div(g,h):
 	return g/h
-i=Division(2,3)
+i=div(2,3)
 
 print i
 
 def hours_from_seconds(seconds):
 	return seconds/3600
-
-print hours_from_seconds(86400)
+h=hours_from_seconds(86400)
+print h
 
 import math
-def area_of_circle(r):
+def circle_area(r):
     a = r**2*math.pi
-    return a
+    a1 = area_of_circle(1)
 
-print area_of_circle(1)
+print a1
 
-def volume_of_sphere(r):
+def sphere_volume(r):
     v = 4.0/3.0 * math.pi*r**3
-    return v
+    v1=volume_of_sphere(5)
 
-print volume_of_sphere(5)
+print v1
 
 def avg_volume(a,b):
     v=((1.0/6.0*math.pi*a**3)+(1.0/6.0*math.pi*b**3))/2
-    return v
+    v2=avg_volume(10, 20)
 
-print avg_volume(10, 20)
+print v2
     
 def area (a,b,c):
     s = (a+b+c) /2
-    return (s*(s-a)*(s-b)*(s-c))**0.5
-
-print area (1,2,2.5)
-
+    s1=(s*(s-a)*(s-b)*(s-c))**0.5
+    s2=area (1,2,2.5)
+print s2
+#from here
 def right_align(word):
     return  str ((80-len(word))*" " + word)
 
@@ -62,7 +62,9 @@ def center(term):
 
 print center("Hello")
 
-def msg_box():
-    "+" + len(word)*" " + "+" + \n| + word + | + \n+ "+" + len(word)*" " + "+"
+def msg_box(word):
+   return "+" + ((len(word)+ 4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word)+ 4)*"-") + "+"
 
 print msg_box("Hello")
+print msg_box("I eat cats!")
+
