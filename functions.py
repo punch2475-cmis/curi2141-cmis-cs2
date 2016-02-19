@@ -1,3 +1,4 @@
+import math
 def add(x,y):
     return x+y
 def sub(a,b):
@@ -8,7 +9,6 @@ def div(g,h):
 	return g/h
 def hours_from_seconds(seconds):
 	return seconds/3600
-import math
 def circle_area(r):
 	return r**2*math.pi
 def sphere_volume(r):
