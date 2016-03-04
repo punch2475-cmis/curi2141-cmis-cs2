@@ -1,4 +1,4 @@
-#Part 1: Terminology (15 points)
+#Part 1: Terminology (15 points)          14
 #1 1pt) What is the symbol "=" used for?
 #       The "=" symbol is called the assignment operator and its job is to assign a value to a variable
 #
@@ -16,11 +16,13 @@
 #
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
 #   examples of each below
-#	1: Integer 
-#	2: String
-#	3: Boolean
-#	4: Tuple
-#	5: Float
+#	1: Integer 4,5
+#	2: String "hi" "hello"
+#	3: Boolean True False
+#	4: Tuple 
+#	5: Float 0.0,  1.0
+#
+#4/5
 #
 #5 2pts) What is the difference between a "function definition" and a 
 #        "function call"?
@@ -37,7 +39,7 @@
 #
 # 3/3
 #
-#Part 2: Programming (25 points)
+#Part 2: Programming (25 points)        22
 #Write a program that asks the user for the areas of 3 circles.
 #It should then calculate the diameter of each and the sum of the diameters 
 #of the 3 circles.
@@ -99,4 +101,8 @@ def main():
     out=output(a,b,c,d)
     print out
 
+#1pt for calling main                             1
 main()
+#1pt explanatory comments                         0
+#1pt code format                                  1
+#1pt for the script running successfully          1
