@@ -6,15 +6,15 @@ def discount_cost(i,j):
     return i-(i*(j/100))
 def discount_and_tax(k,l,n):
     return k-(k*(l/100))+(k*(n/100))
-def output(a,b,c,d):
+def output(CostWithTax,DutchPay,CostWithDiscount,CostWithDiscountAndTax):
     out="""
 Hello
-Here are the results for the cost you inserted:
+Here are the results for the information you inserted:
 The cost with tax : {}
 Here is how much each person should pay : {}
 This is the cost with the discount : {}
 This is the cost with tax and discount : {}
-""".format(a,b,c,d)
+""".format(CostWithTax,DutchPay,CostWithDiscount,CostWithDiscountAndTax)
     return out
 
 #input
@@ -26,12 +26,12 @@ def main ():
     discount=raw_input("Type the percentage of discount>>> ")
     
     #processing
-    a=cost_tax(float(amount),float(tax))
-    b=dutch_pay(float(amount),float(person))
-    c=discount_cost(float(amount),float(discount))
-    d=discount_and_tax(float(amount),float(discount),float(tax))
+    CostWithTax = cost_tax(float(amount),float(tax))
+    DutchPay = dutch_pay(float(amount),float(person))
+    CostWithDiscount = discount_cost(float(amount),float(discount))
+    CostWithDiscountAndTax = discount_and_tax(float(amount),float(discount),float(tax))
     #output
-    out=output(a,b,c,d)
+    out=output(CostWithTax,DutchPay,CostWithDiscount,CostWithDiscountAndTax)
     print out
 
 main()
