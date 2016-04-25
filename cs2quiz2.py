@@ -3,41 +3,41 @@
 #a) ==
 #b) >
 #c) <
-#
+#  3/3
 #2) What does 'return' do?
 # It spits out a value
 #
-#
+#1/1
 #
 #3) What are 2 ways indentation is important in python code?
 #a) The indentation is important because when something is indented, it means that it is in that function.
 #b) Another reason indentation is important is because it shows the end of the function
 #
-#
+#2/2
 
 #PART 2: Reading
 #Type the values for 12 of the 16 of the variables below.
 #
-#problem1_a)	36
-#problem1_b)	Square root of 3  
+#problem1_a)	36                  /
+#problem1_b)	Square root of 3    /
 #problem1_c)	0
-#problem1_d)	5
+#problem1_d)	5                   /
 #
 #problem2_a)	True
 #problem2_b)	False
-#problem2_c)	True
-#problem2_d)	False
+#problem2_c)	False
+#problem2_d)	True
 #
-#problem3_a)	c
-#problem3_b)	b
-#problem3_c)	a
-#problem3_d)	b
+#problem3_a)	c	0.3
+#problem3_b)	b	0.5
+#problem3_c)	a	0.5
+#problem3_d)	b	0.5
 #
 #problem4_a)	7
 #problem4_b)	5
 #problem4_c)	0.125
-#problem4_d)	2.5
-#
+#problem4_d)	2.5   /
+#12/12 
 
 #PART 3: Programming
 #Write a script that asks the user to type in 3 different numbers.
