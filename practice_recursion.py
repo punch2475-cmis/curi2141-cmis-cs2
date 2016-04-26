@@ -32,20 +32,13 @@ def count_down_from(start, stop):
 
 count_down_from(12,2)
 
-
 def adder():
-	print "Running total: 0 "
-	UserInput = raw_input("Next number: ")
-	
 	if UserInput == "":
-		print "The sum is {}"
-		exit
-
+		 print "The sum is" + str(total)
 	else:
-		adder()
+		total += UserInput
 
 def main():
 	function = adder()
 
 main()
-	
