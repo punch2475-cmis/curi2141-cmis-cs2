@@ -32,13 +32,32 @@ def count_down_from(start, stop):
 
 count_down_from(12,2)
 
-def adder():
+def adder(UserInput, total):
+
 	if UserInput == "":
-		 print "The sum is" + str(total)
+		return "The sum is " + str(total)	
 	else:
-		total += UserInput
+		total += float(UserInput)
+		UserInput = raw_input("Running total :" + str(total) + "\n" + "Next Number: ")
+		return adder(UserInput, total)
 
 def main():
-	function = adder()
+	function = adder(0,0)
+	print function
 
-main()
+
+def biggest(number):
+	prev_userinput = raw_input("Next Number: ")
+	if number == "":
+		print number
+
+	elif float(prev_userinput) > number:
+		biggest(prev_userinput)
+
+	elif number > float(prev_userinput):
+		biggest(number)
+
+def call():
+	number = 0
+	callingfunction = biggest(number)
+call()
