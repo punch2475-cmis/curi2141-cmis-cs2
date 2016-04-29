@@ -31,7 +31,7 @@ def count_down_from(start, stop):
 		count_down_from(start-1, stop)
 
 count_down_from(12,2)
-
+#Adder
 def adder(UserInput, total):
 
 	if UserInput == "":
@@ -45,19 +45,55 @@ def main():
 	function = adder(0,0)
 	print function
 
-
+#Biggest
 def biggest(number):
-	prev_userinput = raw_input("Next Number: ")
-	if number == "":
+	current_userinput = raw_input("Next Number: ")
+	if current_userinput == "":
 		print number
 
-	elif float(prev_userinput) > number:
-		biggest(prev_userinput)
+	elif float(current_userinput) > number:
+		biggest(float(current_userinput))
 
-	elif number > float(prev_userinput):
+	elif number > float(current_userinput):
 		biggest(number)
 
 def call():
 	number = 0
 	callingfunction = biggest(number)
 call()
+#Smallest
+def smallest(number1):
+	current_userinput = raw_input("Next Number: ")
+	if current_userinput == "":
+		print number1
+
+	elif float(current_userinput) > number1:
+		smallest(number1)
+
+	elif number1 > float(current_userinput):
+		smallest(float(current_userinput))
+
+def call():
+	number1 = float("inf")
+	calling = smallest(number1)
+
+call()
+#power
+def pow(x,n):
+	
+	if int(n) == 0:
+		return 1
+	elif int(n) == 1:
+		return n
+	elif int(n) < 0:
+		return 1/int(n)
+	else:
+		print int(x)
+		pow(n-1)
+
+def caller():
+	Number = raw_input("Base Number: ")
+	Exponent = raw_input("Exponent: ")
+	pow(Number, Exponent)
+
+caller()
