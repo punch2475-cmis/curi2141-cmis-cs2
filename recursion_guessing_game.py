@@ -13,11 +13,11 @@ def game(targetnumber, tries):
 	elif guess < targetnumber:
 		print "It is too low"
 		game(targetnumber, tries-1)
-	
+
 def main():
 	import random
 	targetnumber = int(random.randint(1, 100))
 	tries = 5
 	Guess = game(targetnumber, tries)
-	
+
 main()

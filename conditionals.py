@@ -25,10 +25,9 @@ def Gender():
 	gender=raw_input("Are you a male or female? Type M if you are a male and F if you are a female >>> ") 
 #gender
 	if gender == "M":
-		return "man"
-
+		return "Man"
 	else:
-		return "woman"
+		return "Female"
 
 def Money():
 	MiddleName=raw_input("What is your middle name? >>> ")
@@ -89,10 +88,10 @@ def lottery():
 	guessNumber = int(raw_input("What do you think it is? >>> "))
 
     #lottery
-	if guessNumber == random:
+	if guessNumber == random or guessNumber == 3:
 		return "He/She won the lottery at least 3 times in her life time!"
 
-	elif guessNumber < random:
+	elif guessNumber < random and not guessNumber == 3:
 		return "He/She didn't even have one chance winning the lottery no matter how many times he/she tried because luck was just never on his/her side."
 
 	elif guessNumber > random:
@@ -106,11 +105,23 @@ def Job():
 	if RandomRandom > 0.5:
 		return "beggar"
 
-	elif RandomRandom < 0.5:
+	elif RandomRandom < 0.5 and RandomRandom > 0:
 		return "doctor"
 
 	elif RandomRadom == 0.5:
 		return "photographer"
+
+def true_or_false():
+	choice="""
+a. awesome
+b. depressing
+"""
+	print choice
+	answer=raw_input("Type your answer >>> ")
+	if answer == "a":
+		return True
+	else:
+		return False
 
 def yourstory():
     import random
@@ -123,8 +134,9 @@ AdjForFamily=Family()
 Adjective=TypeOfHusbandWife()
 Occupation=Job()
 Lottery=lottery()
+TrueorFalse=true_or_false()
 print """
-Once upon a time there was a {} called {}. He/She was {} his/her entire life. He/She lived with a {} husband/wife and {} children. He/She was a {}. {} {} He/She had a {} life with his/her family.
-""".format(MorF, MainCharacter, State, Adjective, Kids, Occupation, Lottery, Secret, AdjForFamily)
+Once upon a time there was a {} called {}. He/She was {} his/her entire life. He/She lived with a {} husband/wife and {} children. He/She was a {}. {} {} He/She had a {} life with his/her family. This story is {}
+""".format(MorF, MainCharacter, State, Adjective, Kids, Occupation, Lottery, Secret, AdjForFamily, TrueorFalse)
 
 yourstory()
