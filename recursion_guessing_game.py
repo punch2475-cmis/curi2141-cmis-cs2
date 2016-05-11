@@ -14,10 +14,21 @@ def game(targetnumber, tries):
 		print "It is too low"
 		game(targetnumber, tries-1)
 
-def main():
+def rounds(tries, num_of_rounds):
 	import random
 	targetnumber = int(random.randint(1, 100))
+
+	if num_of_rounds == 0:
+		print "Oops! No more tries!"
+
+	else:
+		Guess = game(targetnumber, tries)
+		print "Round", num_of_rounds -1
+		rounds(tries, num_of_rounds -1)
+
+def main():
 	tries = 5
-	Guess = game(targetnumber, tries)
+	num_of_rounds = 3
+	Rounds = rounds(num_of_rounds)
 
 main()
