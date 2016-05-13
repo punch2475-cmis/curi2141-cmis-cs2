@@ -14,7 +14,7 @@ def game(targetnumber, tries):
 		print "It is too low"
 		game(targetnumber, tries-1)
 
-def rounds(tries, num_of_rounds, ):
+def rounds(tries, num_of_rounds):
 	import random
 	targetnumber = int(random.randint(1, 100))
 
@@ -26,24 +26,28 @@ def rounds(tries, num_of_rounds, ):
 		print "Round", num_of_rounds -1
 		rounds(tries, num_of_rounds -1)
 
-def bonus(first_half_guess, target):
+def bonus(minimum, maximum):
+	first_half_guess = 1/2 * maximum
 
-	if first_half_guess > target:
-		print "It is too high"
-		bonus(1/2 * first_half_guess)
-
-	elif first_half_guess == target:
+	if first_half_guess == target:
 		print "You are awesome!!"
+		
+	elif first_half_guess > target:
+		print "It is too high"
+		bonus(minimum, first_half_guess-1)
 
 	elif first_half_guess < target:
-		print "It is too high"
-		bonus((1/2 * first_half_guess) + first_half_guess)
+		print "It is too low"
+		bonus(first_half_guess+1,maximum)
 
 def main():
 	tries = 5
 	num_of_rounds = 3
 	Rounds = rounds(tries, num_of_rounds)
 
+	minimum = 1
+	maximum = 100
 	target = raw_input("Target number: ")
-	first_half_guess = 50
+	Bonus = bonus(minimum, maximum)
+
 main()
