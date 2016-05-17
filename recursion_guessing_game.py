@@ -1,8 +1,9 @@
 def game(targetnumber, tries):
-	guess = int(raw_input("Guess a number from 1 to 100. I guess: "))
+	guess = raw_input("Guess a number from 1 to 100. I guess: ")
+	
 	if guess == targetnumber:
 		print "You are AWESOME!"
-
+	correct +=1
 	elif tries == 1:
 		print "You are horrible at this game"
 
@@ -18,15 +19,15 @@ def rounds(tries, num_of_rounds):
 	import random
 	targetnumber = int(random.randint(1, 100))
 
-	if num_of_rounds == 0:
+	if num_of_rounds == 4:
 		print "Oops! No more tries!"
 
 	else:
 		Guess = game(targetnumber, tries)
-		print "Round", num_of_rounds -1
-		rounds(tries, num_of_rounds -1)
+		print "Round", num_of_rounds +1
+		rounds(tries, num_of_rounds +1)
 
-def bonus(minimum, maximum):
+def bonus(minimum, maximum, target):
 	first_half_guess = 1/2 * maximum
 
 	if first_half_guess == target:
@@ -34,20 +35,22 @@ def bonus(minimum, maximum):
 		
 	elif first_half_guess > target:
 		print "It is too high"
-		bonus(minimum, first_half_guess-1)
+		bonus(minimum, first_half_guess-1, target)
 
 	elif first_half_guess < target:
 		print "It is too low"
-		bonus(first_half_guess+1,maximum)
+		bonus(first_half_guess+1, maximum, target)
 
 def main():
 	tries = 5
-	num_of_rounds = 3
+	num_of_rounds = 1
+	print "Round 1"
 	Rounds = rounds(tries, num_of_rounds)
 
 	minimum = 1
 	maximum = 100
-	target = raw_input("Target number: ")
-	Bonus = bonus(minimum, maximum)
+	target = int(raw_input("Target number: "))
+	Bonus = bonus(minimum, maximum, target)
+	
 
 main()
