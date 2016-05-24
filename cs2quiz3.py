@@ -32,13 +32,13 @@
 #b2 = 0
 #b3 = 4
 
-#c1 = 
-#c2 = 
-#c3 = 
+#c1 = -2
+#c2 = 3
+#c3 = 5
 
-#d1 =
-#d2 =
-#d3 =
+#d1 = -4
+#d2 = 8
+#d3 = -4
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
