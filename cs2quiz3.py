@@ -36,9 +36,9 @@
 #b2 = 2
 #b3 = 4
 
-#c1 = -2
+#c1 = 
 #c2 = 4
-#c3 = 45
+#c3 = 
 
 #d1 = 6
 #d2 = 8
@@ -53,13 +53,13 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 
 
-# +2 base case is present (MUST BE LABELED) (1 point)
+# +2 base case is present (MUST BE LABELED) (0 point)
 # +2 recursive case is present (MUST BE LABELED) (2 points)
 # +1 base case returns sum/ct (or equivalent) (1 point)
 # +2 recursive case filters even numbers (2 points)
-# +1 recursive case increments sum and ct correctly 0 point
-# +1 recursive case returns correct recursive call 0 point
-# +1 main function present AND called  1 point
+# +1 recursive case increments sum and ct correctly (0 point)
+# +1 recursive case returns correct recursive call (0 point)
+# +1 main function present AND called  (1 point)
 
 def Numbers(user_input, total, odd_numbers):
 	user_input = raw_input("Number: ")
