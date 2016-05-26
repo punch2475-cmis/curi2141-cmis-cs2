@@ -27,30 +27,10 @@ def rounds(tries, num_of_rounds):
 		print "Round", num_of_rounds +1
 		rounds(tries, num_of_rounds +1)
 
-def bonus(minimum, maximum, target):
-	first_half_guess = 1/2 * maximum
-
-	if first_half_guess == target:
-		print "You are awesome!!"
-		
-	elif first_half_guess > target:
-		print "It is too high"
-		bonus(minimum, first_half_guess-1, target)
-
-	elif first_half_guess < target:
-		print "It is too low"
-		bonus(first_half_guess+1, maximum, target)
-
 def main():
 	tries = 5
 	num_of_rounds = 1
 	print "Round 1"
 	Rounds = rounds(tries, num_of_rounds)
-
-	minimum = 1
-	maximum = 100
-	target = int(raw_input("Target number: "))
-	Bonus = bonus(minimum, maximum, target)
-	
 
 main()
