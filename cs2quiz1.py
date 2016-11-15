@@ -105,4 +105,4 @@ def main():
 main()
 #1pt explanatory comments                         0
 #1pt code format                                  1
-#1pt for the script running successfully          1
+#1pt for the script running successfully          
